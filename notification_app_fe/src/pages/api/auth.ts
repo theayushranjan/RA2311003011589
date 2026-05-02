@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === 'POST') {
     try {
-      const response = await fetch("http://20.244.56.144/evaluation-service/auth", {
+      const response = await fetch("http://20.207.122.201/evaluation-service/auth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
