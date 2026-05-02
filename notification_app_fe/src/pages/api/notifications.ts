@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     try {
       const authHeader = req.headers.authorization;
       const queryString = new URLSearchParams(req.query as Record<string, string>).toString();
-      const response = await fetch(`http://20.207.122.201/evaluation-service/notifications?${queryString}`, {
+      const response = await fetch(`http://20.244.56.144/evaluation-service/notifications?${queryString}`, {
         method: "GET",
         headers: {
           ...(authHeader ? { Authorization: authHeader } : {}),

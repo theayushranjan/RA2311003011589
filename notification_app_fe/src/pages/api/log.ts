@@ -4,7 +4,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'POST') {
     const { stack, level, package: pkg, message, token } = req.body;
     try {
-      await fetch("http://20.207.122.201/evaluation-service/logs", {
+      await fetch("http://20.244.56.144/evaluation-service/logs", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
